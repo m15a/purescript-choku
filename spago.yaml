@@ -6,7 +6,8 @@ package:
     - prelude
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - psci-support
 workspace:
   package_set:
     registry: 48.5.0
