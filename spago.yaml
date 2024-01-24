@@ -1,0 +1,13 @@
+package:
+  name: chalk
+  dependencies:
+    - console
+    - effect
+    - prelude
+  test:
+    main: Test.Main
+    dependencies: []
+workspace:
+  package_set:
+    registry: 48.5.0
+  extra_packages: {}
