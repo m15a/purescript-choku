@@ -4,6 +4,7 @@ package:
     - aff
     - console
     - effect
+    - maybe
     - prelude
   test:
     main: Test.Main
