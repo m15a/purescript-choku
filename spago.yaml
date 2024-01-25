@@ -14,8 +14,8 @@ package:
   test:
     main: Test.Main
     dependencies:
-      - console: ">=6.1.0 <7.0.0"
-      - psci-support: ">=6.0.0 <7.0.0"
+      - console
+      - psci-support
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
   publish:
@@ -28,5 +28,5 @@ package:
       githubRepo: purescript-choku
 workspace:
   package_set:
-    registry: 48.5.0
+    registry: 48.6.0
   extra_packages: {}

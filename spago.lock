@@ -9,8 +9,8 @@ workspace:
         - maybe: ">=6.0.0 <7.0.0"
         - prelude: ">=6.0.1 <7.0.0"
       test_dependencies:
-        - console: ">=6.1.0 <7.0.0"
-        - psci-support: ">=6.0.0 <7.0.0"
+        - console
+        - psci-support
       build_plan:
         - aff
         - arrays
@@ -57,7 +57,7 @@ workspace:
         - unsafe-coerce
   package_set:
     address:
-      registry: 48.5.0
+      registry: 48.6.0
     compiler: ">=0.15.14 <0.16.0"
     content:
       abc-parser: 2.0.1
@@ -85,7 +85,7 @@ workspace:
       arraybuffer-builder: 3.1.0
       arraybuffer-types: 3.0.2
       arrays: 7.3.0
-      arrays-extra: 0.5.1
+      arrays-extra: 0.6.0
       arrays-zipper: 2.0.1
       ask: 1.0.0
       assert: 6.0.0
@@ -182,7 +182,7 @@ workspace:
       float32: 2.0.0
       fmt: 0.2.1
       foldable-traversable: 6.0.0
-      foldable-traversable-extra: 0.0.5
+      foldable-traversable-extra: 0.0.6
       foreign: 7.0.0
       foreign-object: 4.1.0
       foreign-readwrite: 3.4.0
