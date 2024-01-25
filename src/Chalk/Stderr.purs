@@ -1,7 +1,7 @@
--- | Chalk in `Effect`, for the STDERR stream.
+-- | Chalk in `Effect`. This module is for the STDERR stream.
 -- |
--- | See module `Chalk.Stdout` for more information.
--- | 
+-- | For more information, see the document of module `Chalk.Stdout`.
+-- |
 -- | ### See also
 -- |
 -- | - https://github.com/chalk/chalk#chalkstderr-and-supportscolorstderr
@@ -19,7 +19,7 @@ import Effect (Effect)
 import Chalk.Common (Chalk, withChalk)
 import Chalk.Style (Style)
 
--- | Get the chalk instance for STDERR, automatically detecting the level
+-- | Get the default chalk instance for STDERR, automatically detecting the level
 -- | of color support.
 foreign import chalk :: Effect Chalk
 
@@ -34,7 +34,7 @@ foreign import supportsColor
        , has16m :: Boolean
        }
 
--- | Modify a string, using the chalk for STDERR, with the given style.
+-- | Modify a string, using the default chalk for STDERR, with the given style.
 withStyle :: String -> Style -> Effect String
 withStyle s style = do
   c <- chalk

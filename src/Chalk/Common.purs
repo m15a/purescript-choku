@@ -1,4 +1,4 @@
--- | The chalk type and its common API.
+-- | The chalk type and its common interface.
 module Chalk.Common
   ( Chalk
   , level
@@ -12,12 +12,12 @@ module Chalk.Common
 import Prelude
 import Data.Maybe (Maybe(..))
 
--- | The chalk type, simply wrapping a Javascript `Chalk` object.
+-- | The chalk type, simply wrapping a `Chalk` instance in the Javascript layer.
 newtype Chalk = Chalk Unit
 
 -- | Return the color support level of the given chalk.
 -- |
--- | Higher level supports more colors.
+-- | Higher level means more colors are supported.
 -- | For detail, see https://github.com/chalk/chalk#chalklevel.
 foreign import level :: Chalk -> Int
 
@@ -35,7 +35,7 @@ foreign import _newChalk :: Int -> Chalk
 -- | Create a new chalk with the specified level of color support.
 -- |
 -- | The level should be an integer bounded between `0` and `3`.
--- | Giving an out-of-bounds integer produces `Nothing`.
+-- | An out-of-bounds integer produces `Nothing`.
 mkChalk :: Int -> Maybe Chalk
 mkChalk level_
   | level_ # between 0 3 = Just (_newChalk level_)

@@ -1,13 +1,13 @@
--- | Styles of modification/colors applied to the chalk.
+-- | Styles applied to chalks for modifying/colorizing strings.
 -- |
--- | These styles are basically of function `Chalk -> Chalk`, appending another
--- | modification to the given chalk.
+-- | These styles are of function signature `Chalk -> Chalk`, appending another
+-- | modification to any chalk.
 -- | The full list of styles can be found [here](https://github.com/chalk/chalk#styles)
--- | in the original README.
+-- | in the original chalk's README.
 -- |
 -- | An only difference from the original API is that those six methods to apply
--- | styles using RGB/ANSI256 color models, namely `chalk.rgb`, `chalk.hex`,
--- | `chalk.ansi256`, `chalk.bgRgb`, `chalk.bgHex`, and `chalk.bgAnsi256` are
+-- | styles using RGB/ANSI256 color models, namely `chalk.rgb()`, `chalk.hex()`,
+-- | `chalk.ansi256()`, `chalk.bgRgb()`, `chalk.bgHex()`, and `chalk.bgAnsi256()` are
 -- | integrated into two functions `fg` and `bg`, thanks to Purescript's GADTs.
 -- |
 -- | ### See also
@@ -133,13 +133,13 @@ foreign import _bgRgb :: Fn3 Int Int Int Style
 foreign import _bgHex :: String -> Style
 foreign import _bgAnsi256 :: Int -> Style
 
--- | Modify foreground color with the given color.
+-- | Modify foreground color.
 fg :: Color -> Style
 fg (RGB { r, g, b }) = runFn3 _rgb r g b
 fg (Hex hex) = _hex hex
 fg (ANSI256 i) = _ansi256 i
 
--- | Modify background color with the given color.
+-- | Modify background color.
 bg :: Color -> Style
 bg (RGB { r, g, b }) = runFn3 _bgRgb r g b
 bg (Hex hex) = _bgHex hex

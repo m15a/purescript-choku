@@ -1,10 +1,9 @@
 -- | Chalk in `Effect`, for the STDOUT stream.
--- | 
--- | The default chalk instance automatically detect the level of color support
--- | in the environment, either STDOUT or STDERR.
--- | This module provides the chalk instance for the STDOUT stream.
 -- |
--- | For the STDERR stream, look at module `Chalk.Stderr`.
+-- | The default chalk instance automatically detects the level of color support
+-- | in the environment, either STDOUT or STDERR.
+-- | This module provides the default chalk instance for the STDOUT stream.
+-- | For the STDERR stream, use the module `Chalk.Stderr`.
 -- |
 -- | NOTE: You can force the color support level via environment variable
 -- | `$FORCE_COLOR`.
@@ -41,7 +40,7 @@ foreign import supportsColor
        , has16m :: Boolean
        }
 
--- | Modify a string, using the default chalk, with the given style.
+-- | Modify a string, using the default chalk for STDOUT, with the given style.
 -- |
 -- | For example,
 -- |

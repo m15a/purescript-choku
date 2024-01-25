@@ -1,4 +1,4 @@
--- | `Aff` counterpart of the `Chalk.Stderr` module.
+-- | `Aff` counterparts against the `Chalk.Stderr` module.
 module Chalk.Stderr.Aff
   ( chalk
   , withStyle
