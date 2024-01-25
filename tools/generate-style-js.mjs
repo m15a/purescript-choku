@@ -4,37 +4,36 @@
 */
 
 import { modifierNames, foregroundColorNames, backgroundColorNames } from 'chalk';
-const stdout = process.stdout;
-
+const p = function(line) { process.stdout.write(line + "\n"); }
 const exportStyle = function(name) {
-    return `export const ${name} = function(chalk_) { return chalk_.${name}; };\n`;
+    return `export const ${name} = function(chalk_) { return chalk_.${name}; };`;
 };
 
-stdout.write("/* Modifiers */\n\n");
-
+p("/* Modifiers */");
+p("");
 for (const name of modifierNames) {
-    stdout.write(exportStyle(name));
+    p(exportStyle(name));
 }
-
-stdout.write("\n/* Foreground colors */\n\n");
-
+p("");
+p("/* Foreground colors */");
+p("");
 for (const name of foregroundColorNames) {
-    stdout.write(exportStyle(name));
+    p(exportStyle(name));
 }
-
-stdout.write("\n/* Background colors */\n\n");
-
+p("");
+p("/* Background colors */");
+p("");
 for (const name of backgroundColorNames) {
-    stdout.write(exportStyle(name));
+    p(exportStyle(name));
 }
-
-stdout.write("\n/* 256 and Truecolor support */\n\n");
-
-stdout.write("export const _rgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.rgb(r_, g_, b_); }; };\n");
-stdout.write("export const _hex = function(hex_) { return function(chalk_) { return chalk_.hex(hex_); }; };\n");
-stdout.write("export const _ansi256 = function(i_) { return function(chalk_) { return chalk_.ansi256(i_); }; };\n");
-stdout.write("export const _bgRgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.bgRgb(r_, g_, b_); }; };\n");
-stdout.write("export const _bgHex = function(hex_) { return function(chalk_) { return chalk_.bgHex(hex_); }; };\n");
-stdout.write("export const _bgAnsi256 = function(i_) { return function(chalk_) { return chalk_.bgAnsi256(i_); }; };\n");
+p("");
+p("/* 256 and Truecolor support */");
+p("");
+p("export const _rgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.rgb(r_, g_, b_); }; };");
+p("export const _hex = function(hex_) { return function(chalk_) { return chalk_.hex(hex_); }; };");
+p("export const _ansi256 = function(i_) { return function(chalk_) { return chalk_.ansi256(i_); }; };");
+p("export const _bgRgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.bgRgb(r_, g_, b_); }; };");
+p("export const _bgHex = function(hex_) { return function(chalk_) { return chalk_.bgHex(hex_); }; };");
+p("export const _bgAnsi256 = function(i_) { return function(chalk_) { return chalk_.bgAnsi256(i_); }; };");
 
 // vim: tw=88 nowrap
