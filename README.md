@@ -1,4 +1,4 @@
-# purescript-chalk
+# purescript-choku
 
 [Chalk][chalk] bindings for Purescript.
 
@@ -48,13 +48,13 @@ prints like
 
 ```console
 $ npm install chalk
-$ spago install chalk
+$ spago install choku
 ```
 
 ## License
 
 See [LICENSE](./LICENSE).
 
-[ci badge]: https://github.com/m15a/purescript-chalk/actions/workflows/ci.yml/badge.svg
-[ci status]: https://github.com/m15a/purescript-chalk/actions/workflows/ci.yml
+[ci badge]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
+[ci status]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
 [chalk]: https://github.com/chalk/chalk

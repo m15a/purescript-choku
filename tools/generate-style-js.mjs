@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  USAGE: ./tools/generate-style-js.mjs > src/Chalk/Style.js
+  USAGE: ./tools/generate-style-js.mjs > src/Choku/Style.js
 */
 
 import { modifierNames, foregroundColorNames, backgroundColorNames } from 'chalk';

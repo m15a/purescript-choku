@@ -1,6 +1,6 @@
 -- | Styles applied to chalks for modifying/colorizing strings.
 -- |
--- | These styles are of function signature `Chalk -> Chalk`, appending another
+-- | These styles are of signature `Choku -> Choku`, appending another
 -- | modification to any chalk.
 -- | The full list of styles can be found [here](https://github.com/chalk/chalk#styles)
 -- | in the original chalk's README.
@@ -13,7 +13,7 @@
 -- | ### See also
 -- |
 -- | - https://github.com/chalk/chalk#chalkstylestylestring-string
-module Chalk.Style
+module Choku.Style
   ( Style
   , reset
   , bold
@@ -65,10 +65,10 @@ module Chalk.Style
   ) where
 
 import Data.Function.Uncurried (Fn3, runFn3)
-import Chalk.Common (Chalk)
-import Chalk.Color (Color(..))
+import Choku.Common (Choku)
+import Choku.Color (Color(..))
 
-type Style = Chalk -> Chalk
+type Style = Choku -> Choku
 
 {- Modifiers -}
 

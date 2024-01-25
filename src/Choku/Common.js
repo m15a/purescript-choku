@@ -8,7 +8,7 @@ export const level = function(chalk_) {
     return chalk_.level;
 };
 
-export const withChalkFlipped = function(chalk_) {
+export const withChokuFlipped = function(chalk_) {
     return function(str) { return chalk_(str);
     };
 };

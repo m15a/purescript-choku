@@ -4,7 +4,7 @@ import Prelude (Unit, (<>), (=<<))
 import Effect (Effect)
 import Effect.Console (log)
 
-import Chalk
+import Choku
 
 main :: Effect Unit
 main = do

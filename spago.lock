@@ -1,15 +1,15 @@
 workspace:
   packages:
-    chalk:
+    choku:
       path: ./
       dependencies:
         - aff: ">=7.1.0 <8.0.0"
-        - console: ">=6.1.0 <7.0.0"
         - effect: ">=4.0.0 <5.0.0"
         - functions: ">=6.0.0 <7.0.0"
         - maybe: ">=6.0.0 <7.0.0"
         - prelude: ">=6.0.1 <7.0.0"
       test_dependencies:
+        - console: ">=6.1.0 <7.0.0"
         - psci-support: ">=6.0.0 <7.0.0"
       build_plan:
         - aff

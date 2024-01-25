@@ -3,7 +3,7 @@
 -- | The default chalk instance automatically detects the level of color support
 -- | in the environment, either STDOUT or STDERR.
 -- | This module provides the default chalk instance for the STDOUT stream.
--- | For the STDERR stream, use the module `Chalk.Stderr`.
+-- | For the STDERR stream, use the module `Choku.Stderr`.
 -- |
 -- | NOTE: You can force the color support level via environment variable
 -- | `$FORCE_COLOR`.
@@ -11,8 +11,8 @@
 -- | ### See also
 -- |
 -- | - https://github.com/chalk/chalk#supportscolor
-module Chalk.Stdout
-  ( chalk
+module Choku.Stdout
+  ( choku
   , supportsColor
   , withStyle
   , (&:)
@@ -22,12 +22,12 @@ module Chalk.Stdout
 
 import Prelude
 import Effect (Effect)
-import Chalk.Common (Chalk, withChalk)
-import Chalk.Style (Style)
+import Choku.Common (Choku, withChoku)
+import Choku.Style (Style)
 
 -- | Get the default chalk instance for STDOUT, automatically detecting the level
 -- | of color support.
-foreign import chalk :: Effect Chalk
+foreign import choku :: Effect Choku
 
 -- | Provide detailed information of the color support level.
 -- |
@@ -49,7 +49,7 @@ foreign import supportsColor
 -- | import Effect.Console
 -- | import Data.Maybe
 -- | import Partial.Unsafe
--- | import Chalk
+-- | import Choku
 -- |
 -- | log =<< "hello" `withStyle` (inverse >>> underline)
 -- | ```
@@ -57,8 +57,8 @@ foreign import supportsColor
 -- | prints an inversed and underlined `"hello"` string.
 withStyle :: String -> Style -> Effect String
 withStyle s style = do
-  c <- chalk
-  pure $ withChalk s (style c)
+  c <- choku
+  pure $ withChoku s (style c)
 
 infix 7 withStyle as &:
 

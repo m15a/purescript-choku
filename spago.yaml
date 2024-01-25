@@ -1,5 +1,5 @@
 package:
-  name: chalk
+  name: choku
   description: |
     Chalk bindings for Purescript.
   dependencies:
@@ -25,7 +25,7 @@ package:
       - "test/**/*.purs"
     location:
       githubOwner: m15a
-      githubRepo: purescript-chalk
+      githubRepo: purescript-choku
 workspace:
   package_set:
     registry: 48.5.0

@@ -1,6 +1,6 @@
--- | `Aff` counterparts against the `Chalk.Stdout` module.
-module Chalk.Stdout.Aff
-  ( chalk
+-- | `Aff` counterparts against the `Choku.Stderr` module.
+module Choku.Stderr.Aff
+  ( choku
   , withStyle
   , (&:)
   , withStyleFlipped
@@ -10,12 +10,12 @@ module Chalk.Stdout.Aff
 import Prelude
 import Effect.Aff (Aff)
 import Effect.Class (liftEffect)
-import Chalk.Stdout (chalk, withStyle, withStyleFlipped) as E
-import Chalk.Common (Chalk)
-import Chalk.Style (Style)
+import Choku.Stderr (choku, withStyle, withStyleFlipped) as E
+import Choku.Common (Choku)
+import Choku.Style (Style)
 
-chalk :: Aff Chalk
-chalk = liftEffect E.chalk
+choku :: Aff Choku
+choku = liftEffect E.choku
 
 withStyle :: String -> Style -> Aff String
 withStyle s style = liftEffect $ E.withStyle s style
