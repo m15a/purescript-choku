@@ -2,6 +2,12 @@
 
 ## Unreleased
 
+## [0.2.2](https://github.com/m15a/purescript-choku/tree/v0.2.2) (2024-01-26)
+
+### Fixed
+
+- `spago publish` error: module `Test.Main` should not be published
+
 ## [0.2.1](https://github.com/m15a/purescript-choku/tree/v0.2.1) (2024-01-26)
 
 ### Fixed
