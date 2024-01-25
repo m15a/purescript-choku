@@ -44,9 +44,12 @@ module Chalk.Style
   , bgMagentaBright
   , bgCyanBright
   , bgWhiteBright
+  , fg
+  , bg
   ) where
 
-import Chalk.Types (Style)
+import Chalk.Types (Color(..), Style)
+import Data.Function.Uncurried (Fn3, runFn3)
 
 {- Modifiers -}
 
@@ -101,3 +104,22 @@ foreign import bgBlueBright :: Style
 foreign import bgMagentaBright :: Style
 foreign import bgCyanBright :: Style
 foreign import bgWhiteBright :: Style
+
+{- 256 and Truecolor support -}
+
+foreign import _rgb :: Fn3 Int Int Int Style
+foreign import _hex :: String -> Style
+foreign import _ansi256 :: Int -> Style
+foreign import _bgRgb :: Fn3 Int Int Int Style
+foreign import _bgHex :: String -> Style
+foreign import _bgAnsi256 :: Int -> Style
+
+fg :: Color -> Style
+fg (RGB { r, g, b }) = runFn3 _rgb r g b
+fg (Hex hex) = _hex hex
+fg (ANSI256 i) = _ansi256 i
+
+bg :: Color -> Style
+bg (RGB { r, g, b }) = runFn3 _bgRgb r g b
+bg (Hex hex) = _bgHex hex
+bg (ANSI256 i) = _bgAnsi256 i

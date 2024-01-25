@@ -6,6 +6,7 @@ workspace:
         - aff
         - console
         - effect
+        - functions
         - maybe
         - prelude
       test_dependencies:

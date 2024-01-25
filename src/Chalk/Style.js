@@ -51,3 +51,12 @@ export const bgBlueBright = function(chalk_) { return chalk_.bgBlueBright; };
 export const bgMagentaBright = function(chalk_) { return chalk_.bgMagentaBright; };
 export const bgCyanBright = function(chalk_) { return chalk_.bgCyanBright; };
 export const bgWhiteBright = function(chalk_) { return chalk_.bgWhiteBright; };
+
+/* 256 and Truecolor support */
+
+export const _rgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.rgb(r_, g_, b_); }; };
+export const _hex = function(hex_) { return function(chalk_) { return chalk_.hex(hex_); }; };
+export const _ansi256 = function(i_) { return function(chalk_) { return chalk_.ansi256(i_); }; };
+export const _bgRgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.bgRgb(r_, g_, b_); }; };
+export const _bgHex = function(hex_) { return function(chalk_) { return chalk_.bgHex(hex_); }; };
+export const _bgAnsi256 = function(i_) { return function(chalk_) { return chalk_.bgAnsi256(i_); }; };
