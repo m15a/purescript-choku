@@ -8,6 +8,6 @@
         "install:spago": "spago install",
         "build": "spago build",
         "check": "spago test",
-        "check:format": "purs-tidy check src test",
+        "check:format": "purs-tidy check src test"
     }
 }
