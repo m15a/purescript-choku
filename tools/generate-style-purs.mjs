@@ -11,12 +11,14 @@ const allNames = modifierNames.concat(
     backgroundColorNames,
     [ "fg", "bg" ]
 );
-stdout.write("module Chalk.Style\n  ( ");
+stdout.write("module Chalk.Style\n  ( Style\n  , ");
 stdout.write(allNames.join("\n  , "));
 stdout.write("\n  ) where\n\n");
 
-stdout.write("import Chalk.Types (Color(..), Style)\n");
-stdout.write("import Data.Function.Uncurried (Fn3, runFn3)\n\n")
+stdout.write("import Data.Function.Uncurried (Fn3, runFn3)\n")
+stdout.write("import Chalk.Common (Chalk)\n");
+stdout.write("import Chalk.Color (Color(..))\n\n");
+stdout.write("type Style = Chalk -> Chalk\n\n");
 
 const importStyle = function(name) {
     return `foreign import ${name} :: Style\n`;
