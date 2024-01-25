@@ -21,8 +21,6 @@ package:
   publish:
     version: 0.2.1
     license: MIT
-    include:
-      - "test/**/*.purs"
     location:
       githubOwner: m15a
       githubRepo: purescript-choku
