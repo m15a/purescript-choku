@@ -7,10 +7,15 @@ package:
     - functions
     - maybe
     - prelude
+  build:
+    censor_project_warnings:
+      - ImplicitQualifiedImportReExport
   test:
     main: Test.Main
     dependencies:
       - psci-support
+    censor_project_warnings:
+      - ImplicitQualifiedImportReExport
 workspace:
   package_set:
     registry: 48.5.0
