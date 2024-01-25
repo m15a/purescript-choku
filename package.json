@@ -1,5 +1,13 @@
 {
-  "dependencies": {
-    "chalk": "^5.3.0"
-  }
+    "private": true,
+    "dependencies": {
+        "chalk": "^5.3.0"
+    },
+    "scripts": {
+        "install:npm": "npm i -g purescript@latest spago@next esbuild@latest purs-tidy@latest purs-backend-es@latest",
+        "install:spago": "spago install",
+        "build": "spago build",
+        "check": "spago test",
+        "check:format": "purs-tidy check src test",
+    }
 }

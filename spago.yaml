@@ -1,21 +1,31 @@
 package:
   name: chalk
+  description: |
+    Chalk bindings for Purescript.
   dependencies:
-    - aff
-    - console
-    - effect
-    - functions
-    - maybe
-    - prelude
+    - aff: ">=7.1.0 <8.0.0"
+    - console: ">=6.1.0 <7.0.0"
+    - effect: ">=4.0.0 <5.0.0"
+    - functions: ">=6.0.0 <7.0.0"
+    - maybe: ">=6.0.0 <7.0.0"
+    - prelude: ">=6.0.1 <7.0.0"
   build:
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
   test:
     main: Test.Main
     dependencies:
-      - psci-support
+      - psci-support: ">=6.0.0 <7.0.0"
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
+  publish:
+    version: 0.0.1
+    license: MIT
+    include:
+      - "test/**/*.purs"
+    location:
+      githubOwner: m15a
+      githubRepo: purescript-chalk
 workspace:
   package_set:
     registry: 48.5.0
