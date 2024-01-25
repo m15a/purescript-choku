@@ -23,7 +23,7 @@ instance Ord Chalk where
   compare c1 c2 = compare (level c1) (level c2)
 
 instance Show Chalk where
-  show c = "(Chalk level:" <> show (level c) <> ")"
+  show c = ("(Chalk level:" <> show (level c) <> ")") `withChalk` c
 
 type SupportsColor =
   { level :: Int
