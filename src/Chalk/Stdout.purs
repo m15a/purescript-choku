@@ -9,12 +9,18 @@ module Chalk.Stdout
 
 import Prelude
 import Effect (Effect)
-import Chalk.Common (Chalk, SupportsColor, withChalk)
+import Chalk.Common (Chalk, withChalk)
 import Chalk.Style (Style)
 
 foreign import chalk :: Effect Chalk
 
-foreign import supportsColor :: Effect SupportsColor
+foreign import supportsColor
+  :: Effect
+       { level :: Int
+       , hasBasic :: Boolean
+       , has256 :: Boolean
+       , has16m :: Boolean
+       }
 
 withStyle :: String -> Style -> Effect String
 withStyle s style = do

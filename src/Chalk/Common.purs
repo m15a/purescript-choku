@@ -1,7 +1,6 @@
 module Chalk.Common
   ( Chalk
   , level
-  , SupportsColor
   , mkChalk
   , withChalk
   , (&|)
@@ -24,13 +23,6 @@ instance Ord Chalk where
 
 instance Show Chalk where
   show c = ("(Chalk level:" <> show (level c) <> ")") `withChalk` c
-
-type SupportsColor =
-  { level :: Int
-  , hasBasic :: Boolean
-  , has256 :: Boolean
-  , has16m :: Boolean
-  }
 
 foreign import _newChalk :: Int -> Chalk
 
