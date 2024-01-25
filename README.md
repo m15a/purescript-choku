@@ -1,8 +1,8 @@
 # purescript-chalk
 
-[![CI][ci badge]][ci status]
+[Chalk][chalk] bindings for Purescript.
 
-[Chalk](https://github.com/chalk/chalk) bindings for Purescript.
+[![CI][ci badge]][ci status]
 
 ## Example
 
@@ -44,5 +44,17 @@ prints like
 
 ![Example](_assets/example.png)
 
+## Installation
+
+```console
+$ npm install chalk
+$ spago install chalk
+```
+
+## License
+
+See [LICENSE](./LICENSE).
+
 [ci badge]: https://github.com/m15a/purescript-chalk/actions/workflows/ci.yml/badge.svg
 [ci status]: https://github.com/m15a/purescript-chalk/actions/workflows/ci.yml
+[chalk]: https://github.com/chalk/chalk
