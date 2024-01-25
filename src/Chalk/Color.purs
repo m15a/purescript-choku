@@ -1,22 +1,8 @@
-module Chalk.Types
-  ( Chalk
-  , Color(..)
-  , Style
-  , SupportsColor
+module Chalk.Color
+  ( Color(..)
   ) where
 
 import Prelude
-
-newtype Chalk = Chalk Unit
-
-type Style = Chalk -> Chalk
-
-type SupportsColor =
-  { level :: Int
-  , hasBasic :: Boolean
-  , has256 :: Boolean
-  , has16m :: Boolean
-  }
 
 data Color
   = RGB { r :: Int, g :: Int, b :: Int }

@@ -9,8 +9,8 @@ module Chalk.Stdout
 
 import Prelude
 import Effect (Effect)
-import Chalk.Types (Chalk, Style, SupportsColor)
-import Chalk.Common (withChalk)
+import Chalk.Common (Chalk, SupportsColor, withChalk)
+import Chalk.Style (Style)
 
 foreign import chalk :: Effect Chalk
 

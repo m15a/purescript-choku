@@ -10,7 +10,8 @@ import Prelude
 import Effect.Aff (Aff)
 import Effect.Class (liftEffect)
 import Chalk.Stdout (chalk, withStyle, withStyleFlipped) as E
-import Chalk.Types (Chalk, Style)
+import Chalk.Common (Chalk)
+import Chalk.Style (Style)
 
 chalk :: Aff Chalk
 chalk = liftEffect E.chalk

@@ -1,5 +1,6 @@
 module Chalk.Style
-  ( reset
+  ( Style
+  , reset
   , bold
   , dim
   , italic
@@ -48,8 +49,11 @@ module Chalk.Style
   , bg
   ) where
 
-import Chalk.Types (Color(..), Style)
 import Data.Function.Uncurried (Fn3, runFn3)
+import Chalk.Common (Chalk)
+import Chalk.Color (Color(..))
+
+type Style = Chalk -> Chalk
 
 {- Modifiers -}
 
