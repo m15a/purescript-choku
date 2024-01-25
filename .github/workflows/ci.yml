@@ -32,6 +32,9 @@ jobs:
             output
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/spago.yaml') }}
 
+      - name: Install Node dev dependencies
+        run: npm run install:dev
+
       - name: Install Node dependencies
         run: npm run install:npm
 
