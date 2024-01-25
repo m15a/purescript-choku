@@ -1,3 +1,4 @@
+-- | `Aff` counterpart of the `Chalk.Stdout` module.
 module Chalk.Stdout.Aff
   ( chalk
   , withStyle
