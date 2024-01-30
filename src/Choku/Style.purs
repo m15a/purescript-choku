@@ -8,7 +8,7 @@
 -- | An only difference from the original API is that those six methods to apply
 -- | styles using RGB/ANSI256 color models, namely `chalk.rgb()`, `chalk.hex()`,
 -- | `chalk.ansi256()`, `chalk.bgRgb()`, `chalk.bgHex()`, and `chalk.bgAnsi256()` are
--- | integrated into two functions `fg` and `bg`, thanks to Purescript's GADTs.
+-- | integrated into two functions `fg` and `bg`, thanks to PureScript's GADTs.
 -- |
 -- | ### See also
 -- |

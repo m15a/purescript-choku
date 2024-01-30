@@ -1,6 +1,6 @@
 # purescript-choku
 
-[Chalk][chalk] bindings for Purescript.
+[Chalk][chalk] bindings for PureScript.
 
 [![CI][ci badge]][ci status]
 

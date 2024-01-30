@@ -25,7 +25,7 @@ p("-- |");
 p("-- | An only difference from the original API is that those six methods to apply");
 p("-- | styles using RGB/ANSI256 color models, namely `chalk.rgb()`, `chalk.hex()`,");
 p("-- | `chalk.ansi256()`, `chalk.bgRgb()`, `chalk.bgHex()`, and `chalk.bgAnsi256()` are");
-p("-- | integrated into two functions `fg` and `bg`, thanks to Purescript's GADTs.");
+p("-- | integrated into two functions `fg` and `bg`, thanks to PureScript's GADTs.");
 p("-- |");
 p("-- | ### See also");
 p("-- |");
