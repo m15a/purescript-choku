@@ -1,8 +1,11 @@
 # purescript-choku
 
-[Chalk][chalk] bindings for PureScript.
+[Chalk][chalk home] bindings for PureScript.
 
 [![CI][ci badge]][ci status]
+[![Release][release badge]][release list]
+[![Pursuit][pursuit badge]][pursuit home]
+[![Maintainer][maintainer badge]][maintainer home]
 
 ## Example
 
@@ -55,6 +58,13 @@ $ spago install choku
 
 See [LICENSE](./LICENSE).
 
+
+[chalk home]: https://github.com/chalk/chalk
 [ci badge]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
 [ci status]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
-[chalk]: https://github.com/chalk/chalk
+[release badge]: https://img.shields.io/github/release/m15a/purescript-choku.svg
+[release list]: https://github.com/m15a/purescript-choku/releases
+[pursuit badge]: https://pursuit.purescript.org/packages/purescript-choku/badge
+[pursuit home]: https://pursuit.purescript.org/packages/purescript-choku
+[maintainer badge]: https://img.shields.io/badge/maintainer-m15a-teal.svg
+[maintainer home]: https://github.com/m15a/
