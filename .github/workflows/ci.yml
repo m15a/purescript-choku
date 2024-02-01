@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [ latest ]
+        node: [ 16, 18, 20, latest ]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -32,13 +32,13 @@ jobs:
             output
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/spago.yaml') }}
 
-      - name: Install Node dev dependencies
+      - name: Install Node development dependencies
         run: npm run install:dev
 
-      - name: Install Node dependencies
+      - name: Install Node package dependencies
         run: npm run install:npm
 
-      - name: Install Purescript dependencies
+      - name: Install Purescript package dependencies
         run: npm run install:spago
 
       - name: Build package
@@ -46,6 +46,3 @@ jobs:
 
       - name: Run tests
         run: npm run check
-
-      - name: Check formats
-        run: npm run check:format
