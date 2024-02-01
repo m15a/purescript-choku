@@ -1,11 +1,20 @@
 # purescript-choku
 
-[Chalk][chalk home] bindings for PureScript.
+[Chalk](https://github.com/chalk/chalk) bindings for PureScript.
 
-[![CI][ci badge]][ci status]
-[![Release][release badge]][release list]
-[![Pursuit][pursuit badge]][pursuit home]
-[![Maintainer][maintainer badge]][maintainer home]
+[![ci][1]][2]
+[![release][3]][4]
+[![pursuit][5]][6]
+[![maintainer][7]][8]
+
+[1]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
+[2]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
+[3]: https://img.shields.io/github/release/m15a/purescript-choku.svg
+[4]: https://github.com/m15a/purescript-choku/releases
+[5]: https://pursuit.purescript.org/packages/purescript-choku/badge
+[6]: https://pursuit.purescript.org/packages/purescript-choku
+[7]: https://img.shields.io/badge/maintainer-m15a-teal.svg
+[8]: https://github.com/m15a/
 
 ## Example
 
@@ -56,15 +65,4 @@ $ spago install choku
 
 ## License
 
-See [LICENSE](./LICENSE).
-
-
-[chalk home]: https://github.com/chalk/chalk
-[ci badge]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
-[ci status]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
-[release badge]: https://img.shields.io/github/release/m15a/purescript-choku.svg
-[release list]: https://github.com/m15a/purescript-choku/releases
-[pursuit badge]: https://pursuit.purescript.org/packages/purescript-choku/badge
-[pursuit home]: https://pursuit.purescript.org/packages/purescript-choku
-[maintainer badge]: https://img.shields.io/badge/maintainer-m15a-teal.svg
-[maintainer home]: https://github.com/m15a/
+See [LICENSE](LICENSE).
