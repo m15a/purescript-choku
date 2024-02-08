@@ -35,7 +35,7 @@ and this project adheres to [Semantic Versioning][2].
 
 - Initial release
 
-[v0.2.2]: https://github.com/m15a/purescript-choku/tree/v0.2.2
+[v0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
 [v0.2.1]: https://github.com/m15a/purescript-choku/tree/v0.2.1
 [v0.2.0]: https://github.com/m15a/purescript-choku/tree/v0.2.0
 [v0.1.0]: https://github.com/m15a/purescript-choku/tree/v0.1.0
