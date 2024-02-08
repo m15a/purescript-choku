@@ -27,6 +27,7 @@
         purs-backend-es
         spago-unstable
         purs-tidy
+        purescript-language-server
       ];
     };
   });
