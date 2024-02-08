@@ -1,62 +1,62 @@
 /* Modifiers */
 
-export const reset = function(chalk_) { return chalk_.reset; };
-export const bold = function(chalk_) { return chalk_.bold; };
-export const dim = function(chalk_) { return chalk_.dim; };
-export const italic = function(chalk_) { return chalk_.italic; };
-export const underline = function(chalk_) { return chalk_.underline; };
-export const overline = function(chalk_) { return chalk_.overline; };
-export const inverse = function(chalk_) { return chalk_.inverse; };
-export const hidden = function(chalk_) { return chalk_.hidden; };
-export const strikethrough = function(chalk_) { return chalk_.strikethrough; };
+export const reset = function(self) { return self.reset; };
+export const bold = function(self) { return self.bold; };
+export const dim = function(self) { return self.dim; };
+export const italic = function(self) { return self.italic; };
+export const underline = function(self) { return self.underline; };
+export const overline = function(self) { return self.overline; };
+export const inverse = function(self) { return self.inverse; };
+export const hidden = function(self) { return self.hidden; };
+export const strikethrough = function(self) { return self.strikethrough; };
 
 /* Foreground colors */
 
-export const black = function(chalk_) { return chalk_.black; };
-export const red = function(chalk_) { return chalk_.red; };
-export const green = function(chalk_) { return chalk_.green; };
-export const yellow = function(chalk_) { return chalk_.yellow; };
-export const blue = function(chalk_) { return chalk_.blue; };
-export const magenta = function(chalk_) { return chalk_.magenta; };
-export const cyan = function(chalk_) { return chalk_.cyan; };
-export const white = function(chalk_) { return chalk_.white; };
-export const blackBright = function(chalk_) { return chalk_.blackBright; };
-export const gray = function(chalk_) { return chalk_.gray; };
-export const grey = function(chalk_) { return chalk_.grey; };
-export const redBright = function(chalk_) { return chalk_.redBright; };
-export const greenBright = function(chalk_) { return chalk_.greenBright; };
-export const yellowBright = function(chalk_) { return chalk_.yellowBright; };
-export const blueBright = function(chalk_) { return chalk_.blueBright; };
-export const magentaBright = function(chalk_) { return chalk_.magentaBright; };
-export const cyanBright = function(chalk_) { return chalk_.cyanBright; };
-export const whiteBright = function(chalk_) { return chalk_.whiteBright; };
+export const black = function(self) { return self.black; };
+export const red = function(self) { return self.red; };
+export const green = function(self) { return self.green; };
+export const yellow = function(self) { return self.yellow; };
+export const blue = function(self) { return self.blue; };
+export const magenta = function(self) { return self.magenta; };
+export const cyan = function(self) { return self.cyan; };
+export const white = function(self) { return self.white; };
+export const blackBright = function(self) { return self.blackBright; };
+export const gray = function(self) { return self.gray; };
+export const grey = function(self) { return self.grey; };
+export const redBright = function(self) { return self.redBright; };
+export const greenBright = function(self) { return self.greenBright; };
+export const yellowBright = function(self) { return self.yellowBright; };
+export const blueBright = function(self) { return self.blueBright; };
+export const magentaBright = function(self) { return self.magentaBright; };
+export const cyanBright = function(self) { return self.cyanBright; };
+export const whiteBright = function(self) { return self.whiteBright; };
 
 /* Background colors */
 
-export const bgBlack = function(chalk_) { return chalk_.bgBlack; };
-export const bgRed = function(chalk_) { return chalk_.bgRed; };
-export const bgGreen = function(chalk_) { return chalk_.bgGreen; };
-export const bgYellow = function(chalk_) { return chalk_.bgYellow; };
-export const bgBlue = function(chalk_) { return chalk_.bgBlue; };
-export const bgMagenta = function(chalk_) { return chalk_.bgMagenta; };
-export const bgCyan = function(chalk_) { return chalk_.bgCyan; };
-export const bgWhite = function(chalk_) { return chalk_.bgWhite; };
-export const bgBlackBright = function(chalk_) { return chalk_.bgBlackBright; };
-export const bgGray = function(chalk_) { return chalk_.bgGray; };
-export const bgGrey = function(chalk_) { return chalk_.bgGrey; };
-export const bgRedBright = function(chalk_) { return chalk_.bgRedBright; };
-export const bgGreenBright = function(chalk_) { return chalk_.bgGreenBright; };
-export const bgYellowBright = function(chalk_) { return chalk_.bgYellowBright; };
-export const bgBlueBright = function(chalk_) { return chalk_.bgBlueBright; };
-export const bgMagentaBright = function(chalk_) { return chalk_.bgMagentaBright; };
-export const bgCyanBright = function(chalk_) { return chalk_.bgCyanBright; };
-export const bgWhiteBright = function(chalk_) { return chalk_.bgWhiteBright; };
+export const bgBlack = function(self) { return self.bgBlack; };
+export const bgRed = function(self) { return self.bgRed; };
+export const bgGreen = function(self) { return self.bgGreen; };
+export const bgYellow = function(self) { return self.bgYellow; };
+export const bgBlue = function(self) { return self.bgBlue; };
+export const bgMagenta = function(self) { return self.bgMagenta; };
+export const bgCyan = function(self) { return self.bgCyan; };
+export const bgWhite = function(self) { return self.bgWhite; };
+export const bgBlackBright = function(self) { return self.bgBlackBright; };
+export const bgGray = function(self) { return self.bgGray; };
+export const bgGrey = function(self) { return self.bgGrey; };
+export const bgRedBright = function(self) { return self.bgRedBright; };
+export const bgGreenBright = function(self) { return self.bgGreenBright; };
+export const bgYellowBright = function(self) { return self.bgYellowBright; };
+export const bgBlueBright = function(self) { return self.bgBlueBright; };
+export const bgMagentaBright = function(self) { return self.bgMagentaBright; };
+export const bgCyanBright = function(self) { return self.bgCyanBright; };
+export const bgWhiteBright = function(self) { return self.bgWhiteBright; };
 
 /* 256 and Truecolor support */
 
-export const _rgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.rgb(r_, g_, b_); }; };
-export const _hex = function(hex_) { return function(chalk_) { return chalk_.hex(hex_); }; };
-export const _ansi256 = function(i_) { return function(chalk_) { return chalk_.ansi256(i_); }; };
-export const _bgRgb = function(r_, g_, b_) { return function(chalk_) { return chalk_.bgRgb(r_, g_, b_); }; };
-export const _bgHex = function(hex_) { return function(chalk_) { return chalk_.bgHex(hex_); }; };
-export const _bgAnsi256 = function(i_) { return function(chalk_) { return chalk_.bgAnsi256(i_); }; };
+export const _rgb = function(r_, g_, b_) { return function(self) { return self.rgb(r_, g_, b_); }; };
+export const _hex = function(hex_) { return function(self) { return self.hex(hex_); }; };
+export const _ansi256 = function(i_) { return function(self) { return self.ansi256(i_); }; };
+export const _bgRgb = function(r_, g_, b_) { return function(self) { return self.bgRgb(r_, g_, b_); }; };
+export const _bgHex = function(hex_) { return function(self) { return self.bgHex(hex_); }; };
+export const _bgAnsi256 = function(i_) { return function(self) { return self.bgAnsi256(i_); }; };
