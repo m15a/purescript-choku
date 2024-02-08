@@ -13,7 +13,7 @@ import Prelude
 import Data.Maybe (Maybe(..))
 
 -- | The `Choku` type, simply wrapping a `Chalk` instance in the Javascript layer.
-newtype Choku = Choku Unit
+foreign import data Choku :: Type
 
 -- | Return the color support level of the given chalk.
 -- |
