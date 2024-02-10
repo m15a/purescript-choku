@@ -2,6 +2,8 @@
 
 [Chalk](https://github.com/chalk/chalk) bindings for PureScript.
 
+([Chōku][9] means chalk in Japanese.)
+
 [![ci][1]][2]
 [![release][3]][4]
 [![pursuit][5]][6]
@@ -15,6 +17,7 @@
 [6]: https://pursuit.purescript.org/packages/purescript-choku
 [7]: https://img.shields.io/badge/maintainer-m15a-teal.svg
 [8]: https://github.com/m15a/
+[9]: https://en.wiktionary.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AF
 
 ## Example
 
