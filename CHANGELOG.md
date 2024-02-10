@@ -16,6 +16,10 @@ and this project adheres to [Semantic Versioning][2].
   Accordingly, the signature of `mkChoku` is changed to
   `mkChoku :: ColorSupportLevel -> Choku`.
 
+### Added
+
+- Safe constructors of `Color` type
+
 ### Fixed
 
 - Type error of `supportsColor` without color support
