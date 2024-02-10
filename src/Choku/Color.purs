@@ -2,7 +2,7 @@
 -- |
 -- | Chalk supports three color representations: RGB, hex, and ANSI 256 colors.
 -- | Foreground and background colors can be specified using one of them through
--- | [`fg`](Choku.Style.html#v:fg) and [`bg`](Choku.Style.html#v:bg) styling functions,
+-- | [`fg`](Choku.Style#v:fg) and [`bg`](Choku.Style#v:bg) styling functions,
 -- | respectively.
 -- |
 -- | ### See also
