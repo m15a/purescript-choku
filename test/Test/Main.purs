@@ -10,6 +10,7 @@ import Test.Level0 (level0Spec)
 import Test.Level1 (level1Spec)
 import Test.Level2 (level2Spec)
 import Test.Level3 (level3Spec)
+import Test.Color (colorSpec)
 
 main :: Effect Unit
 main = launchAff_ $ runSpec [ consoleReporter ] do
@@ -17,3 +18,4 @@ main = launchAff_ $ runSpec [ consoleReporter ] do
   level1Spec
   level2Spec
   level3Spec
+  colorSpec
