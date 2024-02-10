@@ -10,7 +10,6 @@ workspace:
         - prelude: ">=6.0.1 <7.0.0"
       test_dependencies:
         - console
-        - psci-support
       build_plan:
         - aff
         - arrays
@@ -45,7 +44,6 @@ workspace:
         - partial
         - prelude
         - profunctor
-        - psci-support
         - refs
         - safe-coerce
         - st
@@ -892,14 +890,6 @@ packages:
       - newtype
       - prelude
       - tuples
-  psci-support:
-    type: registry
-    version: 6.0.0
-    integrity: sha256-C6ql4P9TEP06hft/1Z5QumPA4yARR4VIxDdhmL1EO+Y=
-    dependencies:
-      - console
-      - effect
-      - prelude
   refs:
     type: registry
     version: 6.0.0

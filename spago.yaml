@@ -15,7 +15,6 @@ package:
     main: Test.Main
     dependencies:
       - console
-      - psci-support
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
   publish:
