@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning][2].
 
 ## Unreleased
 
+### Changed
+
+- Introduce `ColorSupportLevel` type.
+  Accordingly, the signature of `mkChoku` is changed to
+  `mkChoku :: ColorSupportLevel -> Choku`.
+  
 ## [0.2.2][v0.2.2] (2024-01-26)
 
 ### Fixed
