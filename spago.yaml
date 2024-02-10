@@ -15,6 +15,7 @@ package:
     main: Test.Main
     dependencies:
       - console
+      - spec
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
   publish:
