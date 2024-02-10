@@ -1,65 +1,19 @@
 module Test.Main (main) where
 
-import Prelude (Unit, (<>), (=<<))
+import Prelude
 import Effect (Effect)
-import Effect.Console (log)
+import Effect.Aff (launchAff_)
+import Test.Spec.Reporter.Console (consoleReporter)
+import Test.Spec.Runner (runSpec)
 
-import Choku
+import Test.Level0 (level0Spec)
+import Test.Level1 (level1Spec)
+import Test.Level2 (level2Spec)
+import Test.Level3 (level3Spec)
 
 main :: Effect Unit
-main = do
-
-  let
-    space = reset :& " "
-    cr = reset :& "\n"
-    end = reset :& ""
-
-  log =<< bold :& "bold"
-    <> space
-    <> dim :& "dim"
-    <> space
-    <> italic :& "italic"
-    <> space
-    <> underline :& "underline"
-    <> space
-    <> inverse :& "inverse"
-    <> space
-    <> strikethrough :& "strikethrough"
-    <> space
-    <> black :& "black"
-    <> cr
-
-    <> red :& "red"
-    <> space
-    <> green :& "green"
-    <> space
-    <> yellow :& "yellow"
-    <> space
-    <> blue :& "blue"
-    <> space
-    <> magenta :& "magenta"
-    <> space
-    <> cyan :& "cyan"
-    <> space
-    <> white :& "white"
-    <> space
-    <> gray :& "gray"
-    <> space
-    <> bgBlack :& "bgBlack"
-    <> cr
-
-    <> bgRed :& "bgRed"
-    <> space
-    <> bgGreen :& "bgGreen"
-    <> space
-    <> bgYellow :& "bgYellow"
-    <> space
-    <> bgBlue :& "bgBlue"
-    <> space
-    <> bgMagenta :& "bgMagenta"
-    <> space
-    <> bgCyan :& "bgCyan"
-    <> space
-    <> bgWhite :& "bgWhite"
-    <> end
-
+main = launchAff_ $ runSpec [ consoleReporter ] do
+  level0Spec
+  level1Spec
+  level2Spec
+  level3Spec
