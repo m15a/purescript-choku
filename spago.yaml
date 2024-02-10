@@ -25,5 +25,5 @@ package:
       githubRepo: purescript-choku
 workspace:
   package_set:
-    registry: 48.6.0
+    registry: 49.2.0
   extra_packages: {}

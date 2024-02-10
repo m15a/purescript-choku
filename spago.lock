@@ -55,7 +55,7 @@ workspace:
         - unsafe-coerce
   package_set:
     address:
-      registry: 48.6.0
+      registry: 49.2.0
     compiler: ">=0.15.14 <0.16.0"
     content:
       abc-parser: 2.0.1
@@ -83,7 +83,7 @@ workspace:
       arraybuffer-builder: 3.1.0
       arraybuffer-types: 3.0.2
       arrays: 7.3.0
-      arrays-extra: 0.6.0
+      arrays-extra: 0.6.1
       arrays-zipper: 2.0.1
       ask: 1.0.0
       assert: 6.0.0
@@ -109,6 +109,7 @@ workspace:
       chameleon-transformers: 1.0.0
       channel: 1.0.0
       checked-exceptions: 3.1.1
+      choku: 0.2.2
       classless: 0.1.1
       classless-arbitrary: 0.1.1
       classless-decode-json: 0.1.1
@@ -155,7 +156,7 @@ workspace:
       elmish-html: 0.8.2
       elmish-testing-library: 0.3.2
       email-validate: 7.0.0
-      encoding: 0.0.8
+      encoding: 0.0.9
       enums: 6.0.1
       env-names: 0.3.4
       error: 2.0.0
@@ -210,6 +211,7 @@ workspace:
       group: 4.1.1
       halogen: 7.0.0
       halogen-bootstrap5: 5.3.2
+      halogen-canvas: 1.0.0
       halogen-css: 10.0.0
       halogen-echarts-simple: 0.0.4
       halogen-formless: 4.0.3
@@ -224,7 +226,7 @@ workspace:
       halogen-typewriter: 1.0.4
       halogen-vdom: 8.0.0
       halogen-vdom-string-renderer: 0.5.0
-      halogen-xterm: 1.0.0
+      halogen-xterm: 2.0.0
       heckin: 2.0.1
       heterogeneous: 0.6.0
       homogeneous: 0.4.0
@@ -267,6 +269,7 @@ workspace:
       lazy-joe: 1.0.0
       lcg: 4.0.0
       leibniz: 5.0.0
+      leveldb: 1.0.1
       liminal: 1.0.1
       linalg: 6.0.0
       lists: 7.0.0
@@ -370,6 +373,7 @@ workspace:
       protobuf: 4.3.0
       psa-utils: 8.0.0
       psci-support: 6.0.0
+      punycode: 1.0.0
       qualified-do: 2.2.0
       quantities: 12.2.0
       quickcheck: 8.0.1
@@ -409,6 +413,7 @@ workspace:
       return: 0.2.0
       ring-modules: 5.0.1
       rito: 0.3.4
+      rough-notation: 1.0.0
       routing: 11.0.0
       routing-duplex: 0.7.0
       run: 5.0.0
