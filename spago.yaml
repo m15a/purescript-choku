@@ -4,6 +4,7 @@ package:
     Chalk bindings for PureScript.
   dependencies:
     - aff: ">=7.1.0 <8.0.0"
+    - control: ">=6.0.0 <7.0.0"
     - effect: ">=4.0.0 <5.0.0"
     - functions: ">=6.0.0 <7.0.0"
     - maybe: ">=6.0.0 <7.0.0"
