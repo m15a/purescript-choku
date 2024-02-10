@@ -5,4 +5,9 @@ import {
 
 export const choku = function() { return _chalk; };
 
-export const supportsColor = function() { return _supportsColor; };
+export const supportsColor = function() {
+    if (_supportsColor == false) {
+        return { level: 0, hasBasic: false, has256: false, has16m: false };
+    }
+    return _supportsColor;
+};
