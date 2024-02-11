@@ -47,8 +47,6 @@ foreign import supportsColor
 -- | ```purescript
 -- | import Prelude
 -- | import Effect.Console
--- | import Data.Maybe
--- | import Partial.Unsafe
 -- | import Choku
 -- |
 -- | log =<< "hello" `withStyle` (inverse >>> underline)
