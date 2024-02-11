@@ -21,7 +21,7 @@ package:
     censor_project_warnings:
       - ImplicitQualifiedImportReExport
   publish:
-    version: 1.0.0
+    version: 1.0.1
     license: MIT
     location:
       githubOwner: m15a

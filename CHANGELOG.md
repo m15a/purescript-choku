@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning][2].
 
 ## Unreleased
 
+## [1.0.1][v1.0.1] (2024-02-11)
+
 ### Fixed
 
 - Update some outdated documentation
@@ -55,6 +57,7 @@ and this project adheres to [Semantic Versioning][2].
 
 - Initial release
 
+[v1.0.1]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.1
 [v1.0.0]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.0
 [v0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
 [v0.2.1]: https://github.com/m15a/purescript-choku/tree/v0.2.1
