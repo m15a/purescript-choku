@@ -2,13 +2,13 @@
 -- |
 -- | These styles are of signature `Choku -> Choku`, appending another
 -- | modification to any chalk.
--- | The full list of styles can be found [here](https://github.com/chalk/chalk#styles)
--- | in the original chalk's README.
 -- |
+-- | Check out the full list of styles [here](https://github.com/chalk/chalk#styles)
+-- | in the original chalk's README.
 -- | An only difference from the original API is that those six methods to apply
 -- | styles using RGB/ANSI256 color models, namely `chalk.rgb()`, `chalk.hex()`,
--- | `chalk.ansi256()`, `chalk.bgRgb()`, `chalk.bgHex()`, and `chalk.bgAnsi256()` are
--- | integrated into two functions `fg` and `bg`, thanks to PureScript's GADTs.
+-- | `chalk.ansi256()`, `chalk.bgRgb()`, `chalk.bgHex()`, and `chalk.bgAnsi256()`
+-- | are integrated into two functions `fg` and `bg`, thanks to PureScript's GADTs.
 -- |
 -- | ### See also
 -- |

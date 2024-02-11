@@ -84,13 +84,12 @@ mkChoku = _newChalk <<< colorSupportLevelInt
 -- |
 -- | ```purescript
 -- | import Prelude
--- | import Data.Maybe
--- | import Partial.Unsafe
 -- | import Choku
+-- |
 -- | let
--- |   chk = unsafePartial $ fromJust (mkChoku 3) # bold # cyan
+-- |   chalk = mkChoku Has16mColor # bold # cyan
 -- | in
--- |   "hello" `withChoku` chk
+-- |   "hello" `withChoku` chalk
 -- | ```
 -- |
 -- | produces a bold cyan `"hello"` string.
