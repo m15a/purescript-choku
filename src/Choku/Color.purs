@@ -23,9 +23,9 @@ import Data.String.Regex.Flags (ignoreCase) as R
 import Data.String.Regex.Unsafe (unsafeRegex) as R
 
 data Color
-  -- | RGB digits. Each channel has the 8-bit range `0` to `255`.
+  -- | RGB digits. Each channel has 8-bit range from `0` to `255`.
   = RGB { r :: Int, g :: Int, b :: Int }
-  -- | Hex number representation of the RGB color model, for example `#ED49DF`.
+  -- | Hex number representation of the RGB color model. Example: `#ED49DF`.
   | Hex String
   -- | [ANSI 256 colors](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit),
   -- | ranging from `0` to `255`.
@@ -40,7 +40,7 @@ instance Show Color where
 
 -- | Safe constructor to make a `Color` from RGB values.
 -- |
--- | Returns Nothing with out-of-bounds inputs.
+-- | Returns `Nothing` with out-of-bounds inputs.
 mkRGB :: Int -> Int -> Int -> Maybe Color
 mkRGB r g b = do
   guard $ r # between 0 255
@@ -50,7 +50,7 @@ mkRGB r g b = do
 
 -- | Safe constructor to make a `Color` from Hex string.
 -- |
--- | Returns Nothing with invalid Hex string.
+-- | Returns `Nothing` with invalid Hex string.
 -- | Prefix `#` is not mandatory.
 -- | Hex digits of either length 6 (e.g., `#0a0b0c`) or 3 (e.g., `#ABC`) are accepted.
 mkHex :: String -> Maybe Color
@@ -65,7 +65,7 @@ isHexStr = R.test $ R.unsafeRegex "^#?([0-9a-f]{6}|[0-9a-f]{3})$" R.ignoreCase
 
 -- | Safe constructor to make a `Color` from ANSI256 integer value between 0 and 255.
 -- |
--- | Returns Nothing with out-of-bounds input.
+-- | Returns `Nothing` with out-of-bounds input.
 mkANSI256 :: Int -> Maybe Color
 mkANSI256 i = do
   guard $ i # between 0 255
