@@ -68,4 +68,4 @@ $ spago install choku
 
 ## License
 
-See [LICENSE](LICENSE).
+[MIT](LICENSE)
