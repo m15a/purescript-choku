@@ -4,7 +4,7 @@
 
 ### Format
 
-Follows the style of [conventional commits][1]:
+Follow the style of [conventional commits][1]:
 
 ```
 <type>[optional scope][optional bang]: <short description>
