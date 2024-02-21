@@ -2,22 +2,21 @@
 
 [Chalk](https://github.com/chalk/chalk) bindings for PureScript.
 
-([Chōku][9] means chalk in Japanese.)
+([Chōku][1] means chalk in Japanese.)
 
-[![ci][1]][2]
-[![release][3]][4]
-[![pursuit][5]][6]
-[![maintainer][7]][8]
+[![ci][b1]][b2]
+[![release][b3]][b4]
+[![pursuit][b5]][b6]
+[![maintainer][b7]][b8]
 
-[1]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
-[2]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
-[3]: https://img.shields.io/github/release/m15a/purescript-choku.svg
-[4]: https://github.com/m15a/purescript-choku/releases
-[5]: https://pursuit.purescript.org/packages/purescript-choku/badge
-[6]: https://pursuit.purescript.org/packages/purescript-choku
-[7]: https://img.shields.io/badge/maintainer-m15a-teal.svg
-[8]: https://github.com/m15a/
-[9]: https://en.wiktionary.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AF
+[b1]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml/badge.svg
+[b2]: https://github.com/m15a/purescript-choku/actions/workflows/ci.yml
+[b3]: https://img.shields.io/github/release/m15a/purescript-choku.svg
+[b4]: https://github.com/m15a/purescript-choku/releases
+[b5]: https://pursuit.purescript.org/packages/purescript-choku/badge
+[b6]: https://pursuit.purescript.org/packages/purescript-choku
+[b7]: https://img.shields.io/badge/maintainer-m15a-teal.svg
+[b8]: https://github.com/m15a/
 
 ## Example
 
@@ -69,3 +68,5 @@ $ spago install choku
 ## License
 
 [MIT](LICENSE)
+
+[1]: https://en.wiktionary.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AF
