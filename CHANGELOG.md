@@ -10,13 +10,13 @@ and this project adheres to [Semantic Versioning][2].
 
 ## Unreleased
 
-## [1.0.1][v1.0.1] (2024-02-11)
+## [1.0.1] (2024-02-11)
 
 ### Fixed
 
 - Update some outdated documentation
 
-## [1.0.0][v1.0.0] (2024-02-11)
+## [1.0.0] (2024-02-11)
 
 ### Changed
 
@@ -32,13 +32,13 @@ and this project adheres to [Semantic Versioning][2].
 
 - Type error of `supportsColor` without color support
   
-## [0.2.2][v0.2.2] (2024-01-26)
+## [0.2.2] (2024-01-26)
 
 ### Fixed
 
 - `spago publish` error: module `Test.Main` should not be published
 
-## [0.2.1][v0.2.1] (2024-01-26)
+## [0.2.1] (2024-01-26)
 
 ### Fixed
 
@@ -46,20 +46,20 @@ and this project adheres to [Semantic Versioning][2].
   https://github.com/purescript/spago/issues/1110
 
 
-## [0.2.0][v0.2.0] (2024-01-26)
+## [0.2.0] (2024-01-26)
 
 ### Changed
 
 - Change project name `purescript-chalk` to `purescript-choku`
   since the other users have already used it.
 
-## [0.1.0][v0.1.0] (2024-01-25)
+## [0.1.0] (2024-01-25)
 
 - Initial release
 
-[v1.0.1]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.1
-[v1.0.0]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.0
-[v0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
-[v0.2.1]: https://github.com/m15a/purescript-choku/tree/v0.2.1
-[v0.2.0]: https://github.com/m15a/purescript-choku/tree/v0.2.0
-[v0.1.0]: https://github.com/m15a/purescript-choku/tree/v0.1.0
+[1.0.1]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.1
+[1.0.0]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.0
+[0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
+[0.2.1]: https://github.com/m15a/purescript-choku/tree/v0.2.1
+[0.2.0]: https://github.com/m15a/purescript-choku/tree/v0.2.0
+[0.1.0]: https://github.com/m15a/purescript-choku/tree/v0.1.0
