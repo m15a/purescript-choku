@@ -4,7 +4,7 @@
         "chalk": "^5.3.0"
     },
     "scripts": {
-        "install:npm:dev": "npm i -g purescript@0.15.14 spago@next esbuild@latest purs-backend-es@latest",
+        "install:npm:dev": "npm i -g purescript@latest spago@next esbuild@latest purs-backend-es@latest",
         "install:npm:deps": "npm install",
         "install:spago:deps": "spago install",
         "build": "spago build",
