@@ -11,14 +11,14 @@ package:
     - prelude: ">=6.0.1 <7.0.0"
     - strings: ">=6.0.1 <7.0.0"
   build:
-    censor_project_warnings:
+    censorProjectWarnings:
       - ImplicitQualifiedImportReExport
   test:
     main: Test.Main
     dependencies:
       - console
       - spec
-    censor_project_warnings:
+    censorProjectWarnings:
       - ImplicitQualifiedImportReExport
   publish:
     version: 1.0.1
@@ -27,6 +27,6 @@ package:
       githubOwner: m15a
       githubRepo: purescript-choku
 workspace:
-  package_set:
+  packageSet:
     registry: 49.2.0
-  extra_packages: {}
+  extraPackages: {}
