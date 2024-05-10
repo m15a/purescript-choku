@@ -34,7 +34,10 @@ breaking changes.
 
 ### Scopes
 
-- **readme**: `README.md`, as is.
+- **readme**: `README.md`.
+- **changelog**: `CHANGELOG.md`
+- **contributing**: `CONTRIBUTING.md`
+- **nix**: `flake.nix` or `flake.lock`
 - **deps**: Node or Spago dependencies.
 
 [1]: https://www.conventionalcommits.org/en/v1.0.0/
