@@ -10,6 +10,13 @@ and this project adheres to [Semantic Versioning][2].
 
 ## [Unreleased]
 
+### Fixed
+
+- Use camelCase format in `spago.yaml` [1cbde39]:
+  See https://github.com/purescript/spago/pull/1202
+
+[1cbde39]: https://github.com/m15a/purescript-choku/commit/1cbde39
+
 ## [1.0.1] (2024-02-11)
 
 ### Fixed
