@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning][2].
 [1]: https://keepachangelog.com/en/1.0.0/
 [2]: https://semver.org/spec/v2.0.0.html
 
-## Unreleased
+## [Unreleased]
 
 ## [1.0.1] (2024-02-11)
 
@@ -57,6 +57,7 @@ and this project adheres to [Semantic Versioning][2].
 
 - Initial release
 
+[Unreleased]: https://github.com/m15a/purescript-choku/tree/main
 [1.0.1]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.1
 [1.0.0]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.0
 [0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
