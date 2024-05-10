@@ -71,3 +71,5 @@ and this project adheres to [Semantic Versioning][2].
 [0.2.1]: https://github.com/m15a/purescript-choku/tree/v0.2.1
 [0.2.0]: https://github.com/m15a/purescript-choku/tree/v0.2.0
 [0.1.0]: https://github.com/m15a/purescript-choku/tree/v0.1.0
+
+<!-- vim: set tw=72 spell: -->

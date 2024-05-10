@@ -70,3 +70,5 @@ $ spago install choku
 [MIT](LICENSE)
 
 [1]: https://en.wiktionary.org/wiki/%E3%83%81%E3%83%A7%E3%83%BC%E3%82%AF
+
+<!-- vim: set tw=72 spell: -->
