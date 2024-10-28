@@ -16,8 +16,9 @@ package:
   test:
     main: Test.Main
     dependencies:
-      - console
-      - spec
+      - console: "*"
+      - spec: ">=8.0.0 <9.0.0"
+      - spec-node: "*"
     censorTestWarnings:
       - ImplicitQualifiedImportReExport
   publish:
