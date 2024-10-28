@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning][2].
 
 ## [Unreleased]
 
+## [1.0.2] (2024-10-28)
+
 ### Fixed
 
 - Fix tests to run with `purescript-spec` >=8.0.0
@@ -64,6 +66,7 @@ and this project adheres to [Semantic Versioning][2].
 - Initial release
 
 [Unreleased]: https://github.com/m15a/purescript-choku/tree/main
+[1.0.2]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.2
 [1.0.1]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.1
 [1.0.0]: https://github.com/m15a/purescript-choku/releases/tag/v1.0.0
 [0.2.2]: https://github.com/m15a/purescript-choku/releases/tag/v0.2.2
