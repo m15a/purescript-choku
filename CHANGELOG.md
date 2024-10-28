@@ -13,10 +13,8 @@ and this project adheres to [Semantic Versioning][2].
 ### Fixed
 
 - Fix tests to run with `purescript-spec` >=8.0.0
-- Use camelCase format in `spago.yaml` [1cbde39]:
+- Use camelCase format in `spago.yaml`:
   See https://github.com/purescript/spago/pull/1202
-
-[1cbde39]: https://github.com/m15a/purescript-choku/commit/1cbde39
 
 ## [1.0.1] (2024-02-11)
 
