@@ -6,6 +6,8 @@ node_modules/
 package-lock.json
 
 # Generated files
+.spec-results
+.psc-ide-port
 .psci
 index.js
 output/
