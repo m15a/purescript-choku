@@ -18,7 +18,7 @@ package:
     dependencies:
       - console
       - spec
-    censorProjectWarnings:
+    censorTestWarnings:
       - ImplicitQualifiedImportReExport
   publish:
     version: 1.0.1
